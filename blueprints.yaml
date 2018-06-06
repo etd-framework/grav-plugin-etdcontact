@@ -1,0 +1,58 @@
+name: Etd Contact
+version: 0.1.0
+description: Manages contact information.
+icon: plug
+author:
+  name: ETD Solutions
+  email: dev@etd-solutions.com
+homepage: https://github.com/etd-framework/grav-plugin-etdcontact
+demo: https://github.com/etd-framework/grav-plugin-etdcontact
+keywords: grav, plugin, contact
+bugs: https://github.com/etd-framework/grav-plugin-etdcontact/issues
+docs: https://github.com/etd-framework/grav-plugin-etdcontact/blob/develop/README.md
+license: MIT
+
+form:
+  validation: strict
+  fields:
+    enabled:
+      type: toggle
+      label: PLUGINS.ETDCONTACT.FIELDS.ENABLED.LABEL
+      help: PLUGINS.ETDCONTACT.FIELDS.ENABLED.HELP
+      highlight: 1
+      default: 0
+      options:
+        1: PLUGINS.ETDCONTACT.FIELDS.ENABLED.OPTIONS.ENABLED
+        0: PLUGINS.ETDCONTACT.FIELDS.ENABLED.OPTIONS.DISABLED
+      validate:
+        type: bool
+    name:
+      type: text
+      label: PLUGINS.ETDCONTACT.FIELDS.NAME.LABEL
+      help: PLUGINS.ETDCONTACT.FIELDS.NAME.HELP
+      validate:
+        type: text
+    phone:
+      type: tel
+      label: PLUGINS.ETDCONTACT.FIELDS.PHONE.LABEL
+      help: PLUGINS.ETDCONTACT.FIELDS.PHONE.HELP
+      validate:
+          pattern: '^(\+\d{2})?( )?(\(?\d{1}\)?\d{1})(-| |\.)?(\d{2})(-| |\.)?(\d{2})(-| |\.)?(\d{2})(-| |\.)?(\d{2})'
+    address:
+      type: text
+      label: PLUGINS.ETDCONTACT.FIELDS.ADDRESS.LABEL
+      help: PLUGINS.ETDCONTACT.FIELDS.ADDRESS.HELP
+      validate:
+          type: text
+    postcode:
+      type: text
+      label: PLUGINS.ETDCONTACT.FIELDS.POSTCODE.LABEL
+      help: PLUGINS.ETDCONTACT.FIELDS.POSTCODE.HELP
+      validate:
+          type: text
+    city:
+      type: text
+      label: PLUGINS.ETDCONTACT.FIELDS.CITY.LABEL
+      help: PLUGINS.ETDCONTACT.FIELDS.CITY.HELP
+      validate:
+          type: text

@@ -1,0 +1,25 @@
+fr:
+  PLUGINS:
+    ETDCONTACT:
+      FIELDS:
+        ADDRESS:
+          LABEL: Adresse
+          HELP: Adresse du contact.
+        CITY:
+          LABEL: Ville
+          HELP: Ville du contact.
+        ENABLED:
+          LABEL: Statut
+          HELP: Statut du plug-in.
+          OPTIONS:
+            DISABLED: Désactivé
+            ENABLED: Activé
+        NAME:
+          LABEL: Nom
+          HELP: Nom du contact.
+        PHONE:
+          LABEL: Téléphone
+          HELP: Téléphone du contact.
+        POSTCODE:
+          LABEL: Code postal
+          HELP: Code postal du contact.
