@@ -56,3 +56,10 @@ form:
       help: PLUGINS.ETDCONTACT.FIELDS.CITY.HELP
       validate:
           type: text
+    facebook:
+      type: text
+      label: PLUGINS.ETDCONTACT.FIELDS.FACEBOOK.LABEL
+      help: PLUGINS.ETDCONTACT.FIELDS.FACEBOOK.HELP
+      placeholder: PLUGINS.ETDCONTACT.FIELDS.FACEBOOK.PLACEHOLDER
+      validate:
+        type: url

@@ -14,6 +14,10 @@ fr:
           OPTIONS:
             DISABLED: Désactivé
             ENABLED: Activé
+        FACEBOOK:
+          LABEL: Lien Facebook
+          HELP: Lien de la page Facebook.
+          PLACEHOLDER: 'https://www.facebook.com/lien-vers-votre-page-facebook'
         NAME:
           LABEL: Nom
           HELP: Nom du contact.
